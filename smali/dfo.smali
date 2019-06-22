@@ -675,11 +675,7 @@
 
     invoke-virtual {v12, v15}, Lcom/google/googlex/gcam/ShotParams;->setCompress_merged_dng(Z)V
 
-    const-string v15, "quality_key"
-
-    invoke-static {v15}, Lcom/FixBSG;->MenuValue(Ljava/lang/String;)I
-
-    move-result v15
+    const v15, 0xc
 
     invoke-virtual {v12, v15}, Lcom/google/googlex/gcam/ShotParams;->setNonzsl_frame_count_override(I)V
 
