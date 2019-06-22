@@ -1,0 +1,58 @@
+.class public final Lcfw;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lpvz;
+
+
+# instance fields
+.field private final a:Lpwk;
+
+
+# direct methods
+.method public constructor <init>(Lpwk;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcfw;->a:Lpwk;
+
+    return-void
+.end method
+
+.method public static a()Lcvb;
+    .locals 2
+
+    new-instance v0, Lcvb;
+
+    const-string v1, "camera.shot_tracking"
+
+    invoke-direct {v0, v1}, Lcvb;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {v0, v1}, Lpwe;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcvb;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcfw;->a:Lpwk;
+
+    invoke-interface {v0}, Lpwk;->get()Ljava/lang/Object;
+
+    invoke-static {}, Lcfw;->a()Lcvb;
+
+    move-result-object v0
+
+    return-object v0
+.end method
