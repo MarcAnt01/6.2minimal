@@ -1017,7 +1017,7 @@
 
     const-string v0, "pref_camera_hdrplus_option_available_key"
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lito;->a(Ljava/lang/String;Z)Lllr;
 
