@@ -472,10 +472,9 @@
 
     const-string v0, "quality_key"
 
-    invoke-static {v0}, Lcom/FixBSG;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/fixBSG;->MenuValue(Ljava/lang/String;)I
 
     move-result v5
-
     if-eqz v5, :cond_2
 
     const/4 v0, 0x1
@@ -750,56 +749,13 @@
 
     sput v0, Lcom/FixBSG;->sCam:I
 
-    if-eqz v0, :cond_0
-
-    const-string v0, "pref_model_back_key"
-
-    invoke-static {v0}, Lcom/FixBSG;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    :goto_0
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_3
-
-    const/4 v1, 0x4
-
-    if-eq v0, v1, :cond_4
-
-    const/4 v1, 0x5
-
-    if-eq v0, v1, :cond_5
-
-    const/4 v1, 0x6
-
-    if-eq v0, v1, :cond_6
-
-    const/4 v1, 0x7
-
-    if-ne v0, v1, :cond_7
-
-    const/16 v1, 0x8
-
-    if-ne v0, v1, :cond_8
-
-    const/16 v1, 0x9
-
-    if-ne v0, v1, :cond_9
+    if-eqz v0, :cond_2
 
     const-string v0, "google"
 
-    const-string v1, "crosshatch"
+    const-string v1, "sargo"
 
-    const-string v2, "Pixel 3 XL"
+    const-string v2, "Pixel 3a XL"
 
     :goto_1
     sput-object v0, Lcom/FixBSG;->sGetMake:Ljava/lang/String;
@@ -810,93 +766,12 @@
 
     return-void
 
-    :cond_0
-    const-string v0, "pref_model_front_key"
-
-    invoke-static {v0}, Lcom/FixBSG;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_1
-    const-string v0, "LGE"
-
-    const-string v1, "bullhead"
-
-    const-string v2, "Nexus 5X"
-
-    goto :goto_1
-
     :cond_2
     const-string v0, "Huawei"
 
     const-string v1, "Angler"
 
     const-string v2, "Nexus 6P"
-
-    goto :goto_1
-
-    :cond_3
-    const-string v0, "google"
-
-    const-string v1, "marlin"
-
-    const-string v2, "Pixel XL"
-
-    goto :goto_1
-
-    :cond_4
-    const-string v0, "google"
-
-    const-string v1, "walleye"
-
-    const-string v2, "Pixel 2"
-
-    goto :goto_1
-
-    :cond_5
-    const-string v0, "google"
-
-    const-string v1, "taimen"
-
-    const-string v2, "Pixel 2 XL"
-
-    goto :goto_1
-
-    :cond_6
-    const-string v0, "google"
-
-    const-string v1, "blueline"
-
-    const-string v2, "Pixel 3"
-
-    goto :goto_1
-
-    :cond_7
-    const-string v0, "google"
-
-    const-string v1, "crosshatch"
-
-    const-string v2, "Pixel 3 XL"
-
-    goto :goto_1
-
-    :cond_8
-    const-string v0, "google"
-
-    const-string v1, "bonito"
-
-    const-string v2, "Pixel 3a"
-
-    goto :goto_1
-
-    :cond_9
-    const-string v0, "google"
-
-    const-string v1, "sargo"
-
-    const-string v2, "Pixel 3a XL"
 
     goto :goto_1
 .end method
