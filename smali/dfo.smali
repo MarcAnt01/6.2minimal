@@ -826,11 +826,7 @@
     const/4 v6, 0x0
 
     :goto_1
-    const-string v7, "pref_always_sabre"
-
-    invoke-static {v7}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-    move-result v7
+    const/4 v7, 0x1
 
     if-nez v7, :cond_7
 
