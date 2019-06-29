@@ -826,9 +826,9 @@
     const/4 v6, 0x0
 
     :goto_1
-    const/4 v7, 0x1
+    sget v6, Lcom/FixBSG;->sCam:I
 
-    if-nez v7, :cond_7
+    if-nez v6, :cond_8
 
     iget-object v7, v0, Ldfo;->f:Lkbn;
 
@@ -843,15 +843,6 @@
     cmpl-float v4, v4, v7
 
     if-ltz v4, :cond_9
-
-    :cond_7
-    sget v6, Lcom/FixBSG;->sCam:I
-
-    if-eqz v6, :cond_8
-
-    const/4 v4, 0x0
-
-    goto :goto_2
 
     :cond_8
     const/4 v4, 0x1
